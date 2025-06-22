@@ -4,6 +4,16 @@
 
 # Heatmap with split boxes for reporting time spent on grant and article writing
 
+## Problem addressed
+
+I wanted an automated way to sum up the effort I had expended on various writing projects in the form of a heatmap.
+The heat map of commits to GitHub is motivating in terms of encouraging frequent commits.
+I can gain a similar motivational driving force by displaying in public a heat map of hours spent working on journal articles per day.
+I started posting this on December 4, 2024.
+Time will tell if this practice makes a difference.
+
+![hmj.png](./hmdgj.png)
+
 
 ## Installation
 

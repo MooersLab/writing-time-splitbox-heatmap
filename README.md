@@ -9,12 +9,28 @@
 I wanted an automated way to sum up the effort I had expended on various writing projects in the form of a heatmap.
 The heat map of commits to GitHub is motivating in terms of encouraging frequent commits.
 I can gain a similar motivational driving force by displaying in public a heat map of hours spent working on grant applications journal articles per day.
-I started posting this on June 22, 2025; as you gain see, I was still doing binge grant writing as of June 22.
+I started posting this on June 22, 2025; as you can see, I was still doing binge grant writing as of June 22.
 Time will tell if this practice makes a difference.
 
 ![hmdgj.png](./hmdgj.png)
 
+### SQL code to generate the table zTimeSpent
 
+```sql
+CREATE TABLE "zTimeSpent" (
+	"id"	INTEGER NOT NULL,
+	"DateDashed"	DATE,
+	"Start"	TIME,
+	"End"	TIME,
+	"TimeClock"	TIME GENERATED ALWAYS AS (strftime('%H:%M', CAST((julianday("End") - julianday("Start")) AS REAL), '12:00')) VIRTUAL,
+	"TimeHr"	REAL GENERATED ALWAYS AS (ROUND((julianday("End") - julianday("Start")) * 24, 2)) VIRTUAL,
+	"ProjectID"	INTEGER,
+	"ProjectDirectory"	TEXT,
+	"Description"	TEXT,
+	"Activity"	TEXT DEFAULT 'none',
+	PRIMARY KEY("id")
+);
+```
 ## Installation
 
 1. Assign project numbers to projects in a separate database or spreadsheet. I also use these numbers to start the names of project folders on my home directory to ease navigation on the command line. Your home folder can hold over 10,000 files. There is no need to use `Documents`.

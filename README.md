@@ -8,8 +8,9 @@
 
 I wanted an automated way to sum up the effort I had expended on various writing projects in the form of a heatmap.
 The heat map of commits to GitHub is motivating in terms of encouraging frequent commits.
-I can gain a similar motivational driving force by displaying in public a heat map of hours spent working on grant applications journal articles per day.
-I started posting this on June 22, 2025; as you can see, I was still doing binge grant writing as of June 22.
+I can gain a similar motivational driving force by displaying in public a heat map of hours spent working on grant applications and journal articles per day.
+I started posting this on June 22, 2025; as you can see, I did binge grant writing before June 22.
+I am trying to achieve a better balance between the two activities.
 Time will tell if this practice makes a difference.
 
 ![hmdgj.png](./hmdgj.png)

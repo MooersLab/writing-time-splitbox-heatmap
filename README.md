@@ -12,7 +12,7 @@ I can gain a similar motivational driving force by displaying in public a heat m
 I started posting this on December 4, 2024.
 Time will tell if this practice makes a difference.
 
-![hmj.png](./hmdgj.png)
+![hmdgj.png](./hmdgj.png)
 
 
 ## Installation
@@ -22,10 +22,10 @@ Time will tell if this practice makes a difference.
 3. Install the required Python packages. Take care that matplotlib is not yet being built in Python 3.13. I use Python 3.11. The Python modules `calmap` and `calplot` will likely need to be installed using 'pip'. It may be best to use a `conda` or `pyenv` environment to avoid the Python dependency nightmare at the expense of wasting disk space with redundant files.
 4. If you wish, set up a cron job to run hmj.py every morning and display the heatmap.
 
-This is an alias to make the plot and post it on GitHub.
+This is an alias to make the plot, view it locally, and post it on GitHub.
 
 ```bash
-hmdgj='cd ~/6003TimeTracking/cb && source python311-env/bin/activate && ./python311-env/bin/python3.11 hmdgj.py && deactivate && cp hmdgj.png ~/6112MooersLabGitHubLabRepos/writing-time-splitbox-heatmap/images/. && cd  ~/6112MooersLabGitHubLabRepos/writing-time-splitbox-heatmap && gac images/hmgdj.png "Updated." && git push && echo "Run hmdgj.py that shows a series of heatmaps by effort on grants and journal articles."'
+hmdgj='cd ~/6003TimeTracking/cb && source python311-env/bin/activate && ./python311-env/bin/python3.11 hmdgj.py && deactivate && cp hmdgj.png ~/6112MooersLabGitHubLabRepos/writing-time-splitbox-heatmap/images/. && cd  ~/6112MooersLabGitHubLabRepos/writing-time-splitbox-heatmap && gac images/hmdgj.png "Updated." && git push && echo "Run hmddgj.py that shows a for calendar year 2025 by timespent on grants and journal articles."'
 ```
 
 Here, `gac` is a bash function because I prefer entering one command over two:

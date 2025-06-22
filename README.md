@@ -18,20 +18,14 @@ Time will tell if this practice makes a difference.
 ## Installation
 
 1. Assign project numbers to projects in a separate database or spreadsheet. I also use these numbers to start the names of project folders on my home directory to ease navigation on the command line. Your home folder can hold over 10,000 files. There is no need to use `Documents`.
-2. Edit the file paths in hmj.py to fit your workflow.
+2. Edit the file paths in hmdgj.py to fit your workflow.
 3. Install the required Python packages. Take care that matplotlib is not yet being built in Python 3.13. I use Python 3.11. The Python modules `calmap` and `calplot` will likely need to be installed using 'pip'. It may be best to use a `conda` or `pyenv` environment to avoid the Python dependency nightmare at the expense of wasting disk space with redundant files.
 4. If you wish, set up a cron job to run hmj.py every morning and display the heatmap.
 
-The cron job calls the following zsh alias. I am using a `pyenv` environment made with Python3.11 installed with `home brew`.
+This is an alias to make the plot and post it on GitHub.
 
 ```bash
-alias hmj='cd ~/6003TimeTracking/cb && source python311-env/bin/activate && ./python311-env/bin/python3.11 hmj.py && deactivate && echo "Run hmj.py and show total effort as a heatmap."'
-```
-
-To post the updated `hmj.png` file on GitHub, I extend the `hmj` alias as follows: 
-
-```bash
-hmj='cd ~/6003TimeTracking/cb && source python311-env/bin/activate && ./python311-env/bin/python3.11 hmj.py && deactivate && cp hmj.png ~/6112MooersLabGitHubLabRepos/writing-timespent-heatmap/images/. && cd  ~/6112MooersLabGitHubLabRepos/writing-timespent-heatmap && gac images/hmj.png "Updated." && git push && echo "Run hmj.py that shows a series of heatmaps by effort."'
+hmdgj='cd ~/6003TimeTracking/cb && source python311-env/bin/activate && ./python311-env/bin/python3.11 hmdgj.py && deactivate && cp hmdgj.png ~/6112MooersLabGitHubLabRepos/writing-time-splitbox-heatmap/images/. && cd  ~/6112MooersLabGitHubLabRepos/writing-time-splitbox-heatmap && gac images/hmgdj.png "Updated." && git push && echo "Run hmdgj.py that shows a series of heatmaps by effort on grants and journal articles."'
 ```
 
 Here, `gac` is a bash function because I prefer entering one command over two:

@@ -70,7 +70,7 @@ gac () {
 ```
 
 ## Related site
-[single channel version in GitHub style: mooerslab/writing-time-spent-heatmap](https://github.com/MooersLab/writing-time-spent-heatmap)
+[single color version in GitHub style: mooerslab/writing-time-spent-heatmap](https://github.com/MooersLab/writing-time-spent-heatmap)
 
 ## Update history
 

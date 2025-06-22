@@ -8,8 +8,8 @@
 
 I wanted an automated way to sum up the effort I had expended on various writing projects in the form of a heatmap.
 The heat map of commits to GitHub is motivating in terms of encouraging frequent commits.
-I can gain a similar motivational driving force by displaying in public a heat map of hours spent working on journal articles per day.
-I started posting this on December 4, 2024.
+I can gain a similar motivational driving force by displaying in public a heat map of hours spent working on grant applications journal articles per day.
+I started posting this on June 22, 2025; as you gain see, I was still doing binge grant writing as of June 22.
 Time will tell if this practice makes a difference.
 
 ![hmdgj.png](./hmdgj.png)
@@ -19,8 +19,8 @@ Time will tell if this practice makes a difference.
 
 1. Assign project numbers to projects in a separate database or spreadsheet. I also use these numbers to start the names of project folders on my home directory to ease navigation on the command line. Your home folder can hold over 10,000 files. There is no need to use `Documents`.
 2. Edit the file paths in hmdgj.py to fit your workflow.
-3. Install the required Python packages. Take care that matplotlib is not yet being built in Python 3.13. I use Python 3.11. The Python modules `calmap` and `calplot` will likely need to be installed using 'pip'. It may be best to use a `conda` or `pyenv` environment to avoid the Python dependency nightmare at the expense of wasting disk space with redundant files.
-4. If you wish, set up a cron job to run hmj.py every morning and display the heatmap.
+3. Install the required Python packages.  I am using a `pyenv` environment made with Python3.11 installed with `home brew`. The Python modules `calmap` and `calplot` will likely need to be installed using 'pip'. It may be best to use a `conda` or `pyenv` environment to avoid the Python dependency nightmare at the expense of wasting disk space with redundant files.
+4. If you wish, set up a cron job to run hmdgj.py every morning and display the heatmap: `crontab -e; 0 3 * * * /Users/blaine/6003TimeTracking/cb/hmdgj.py`
 
 This is an alias to make the plot, view it locally, and post it on GitHub.
 
